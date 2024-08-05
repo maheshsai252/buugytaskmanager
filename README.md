@@ -1,54 +1,41 @@
-The Task Manager component is designed to be a simple application for managing a list of tasks. Here's how it should work when implemented correctly:
+# Task Creation:
 
-Task List Display:
-
-The main component should display a list of tasks.
-Each task should have a text description and a completion status (completed or not completed).
-Tasks should be rendered as list items (<li> elements).
+Review how new tasks are being added to the list.
+Consider the flow from user input to task list update.
 
 
-Adding New Tasks:
+# Task Filtering:
 
-There should be an input field where the user can type the description of a new task.
-A button labeled "Add Task" should be present.
-When the user clicks this button, the new task should be added to the list of tasks.
+Examine the logic for displaying different task categories (all, active, completed).
+Think about how tasks should be categorized in each view.
 
+# Task Statistics:
 
-Toggling Task Completion:
+Review how completed tasks are being counted.
+Think about when this count should update.
 
-Users should be able to click on a task to toggle its completion status.
-Completed tasks should have a line-through style to visually indicate their status.
+# Optimization of Derived Data:
 
+Pay special attention to how filtered tasks are calculated.
+Consider the frequency of this calculation and its impact on performance.
 
-Filtering Tasks:
+#  Performance:
 
-There should be three filter buttons: "All", "Active", and "Completed".
-"All" should show all tasks.
-"Active" should show only uncompleted tasks.
-"Completed" should show only completed tasks.
-The list of tasks should update immediately when a filter is selected.
+Look into how often the component updates.
+Consider if all updates are necessary.
 
+# Task Status Toggle:
 
-Task Statistics:
+Investigate how task completion status is being changed.
+Consider the flow of data when a task is marked complete or incomplete.
 
-At the bottom, there should be a component showing statistics about the tasks.
-It should display the total number of tasks.
-It should also show the number of completed tasks.
-These statistics should update automatically as tasks are added, completed, or un-completed.
+# State Management:
 
+Look at how the task list is being modified throughout the component.
+Consider if all state changes are happening as intended.
 
-React Hooks:
+# Component Lifecycle:
 
-The component uses React Hooks (useState and useEffect) for state management and side effects.
-State updates should trigger appropriate re-renders.
-Effects should run when necessary to keep the UI in sync with the state.
+Examine when different parts of the component update.
+Think about the timing of these updates in relation to user actions.
 
-
-Performance:
-
-The component should be optimized to avoid unnecessary re-renders.
-Computations and effects should only run when relevant data changes.
-
-
-
-When working correctly, this Task Manager should allow users to easily add tasks, mark them as complete or incomplete, filter the task list, and see up-to-date statistics about their tasks. T
